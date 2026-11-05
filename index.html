@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4eb">
+  <meta name="description" content="Dulce Tradición: comida colombiana y pastelería. Consulta el menú y haz tu pedido por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dulce Tradición | Comida colombiana & pastelería">
+  <meta property="og:description" content="Consulta el menú y escríbenos por WhatsApp.">
+  <title>Dulce Tradición | Comida colombiana & pastelería</title>
+  <link rel="icon" type="image/png" href="assets/img/logo-dulce-tradicion.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card-container">
+    <header class="profile-header">
+      <div class="profile-image-wrapper">
+        <div class="profile-image-blur" aria-hidden="true"></div>
+        <img
+          class="profile-image"
+          src="assets/img/logo-dulce-tradicion.png"
+          alt="Logo de Dulce Tradición"
+          width="300"
+          height="300"
+          fetchpriority="high"
+        >
+      </div>
+      <h1 class="profile-name">Dulce Tradición</h1>
+      <p class="profile-title">Comida colombiana &amp; pastelería</p>
+      <p class="phone-line">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.78.7 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.27a2 2 0 0 1 2.11-.45c.84.36 1.72.58 2.62.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span id="phone-display">+1 (973) 303-5998</span>
+      </p>
+    </header>
+
+    <section class="quick-actions" aria-label="Acciones rápidas">
+      <a class="whatsapp-action" id="whatsapp-link" href="https://wa.me/19733035998" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22l5.9-2Z"/><g transform="translate(5.4 5.4) scale(.55)" stroke-width="3.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.78.7 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.27a2 2 0 0 1 2.11-.45c.84.36 1.72.58 2.62.7A2 2 0 0 1 22 16.92Z"/></g></svg>
+        <span>WhatsApp</span>
+      </a>
+      <a class="icon-action" id="call-link" href="tel:+19733035998" aria-label="Llamar a Dulce Tradición" title="Llamar">
+        <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.78.7 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.27a2 2 0 0 1 2.11-.45c.84.36 1.72.58 2.62.7A2 2 0 0 1 22 16.92Z"/></svg>
+      </a>
+      <button class="icon-action" id="save-contact" type="button" aria-label="Guardar contacto" title="Guardar contacto">
+        <svg class="contact-icon" id="save-contact-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6m3-3h-6"/></svg>
+      </button>
+    </section>
+    <p class="visually-hidden" id="contact-status" role="status" aria-live="polite"></p>
+
+    <button class="secondary-btn menu-button" id="open-menu" type="button" aria-haspopup="dialog" aria-controls="menu-dialog">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5.5c0-.83.67-1.5 1.5-1.5H19v16H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M4 17.5c0-.83.67-1.5 1.5-1.5H19M8 8h7M8 11h7"/></svg>
+      <span>Ver menú</span>
+    </button>
+
+    <hr class="section-divider">
+
+    <a class="instagram-link" id="instagram-link" href="https://www.instagram.com/dulce_tradicion.nj/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Dulce Tradición" title="Instagram de Dulce Tradición">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="instagram-dot" cx="17.5" cy="6.5" r=".8"/></svg>
+    </a>
+  </main>
+
+  <dialog class="menu-dialog" id="menu-dialog" aria-labelledby="menu-heading">
+    <div class="menu-dialog__bar">
+      <h2 id="menu-heading">Nuestro menú</h2>
+      <button class="close-menu" id="close-menu" type="button" aria-label="Cerrar menú">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <img class="menu-image" src="assets/img/menu-dulce-tradicion.png" alt="Menú de Dulce Tradición con platos de comida rápida colombiana y precios" loading="lazy" decoding="async">
+  </dialog>
+
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
